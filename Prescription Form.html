@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prescriptions Form</title>
+    <link rel="icon" href="../Asset/favicon.png" />
+    <link href="../Css/prescriptionform.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <a href="./index.html" class="home-link"> Home </a>
+    <h3>Prescription Form</h3>
+
+    <div>
+      <form
+        action="mailto:simplelifepharmacy@email.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="fname">First Name <span style="color: red">*</span></label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Jane"
+          required
+        />
+
+        <label for="lname">Last Name <span style="color: red">*</span></label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Doe"
+          required
+        />
+
+        <label for="D.O.B"
+          >Date of Birth <span style="color: red">*</span></label
+        >
+        <input type="date" id="D.O.B" name="D.O.B" required />
+
+        <label for="address">Address <span style="color: red">*</span></label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="XXX Kingston Drive...."
+          required
+        />
+
+        <label for="email"
+          >Email Address <span style="color: red">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="janedoe123@email.com"
+          required
+        />
+
+        <label for="tele">Telephone <span style="color: red">*</span></label>
+        <input
+          type="tel"
+          id="tele"
+          name="tele"
+          placeholder="+1(876)123-4567"
+          required
+        />
+
+        <label for="sex">Gender</label>
+        <select id="sex" name="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+
+        <label for="DoctorID"
+          >Doctor Identification Number <span style="color: red">*</span></label
+        >
+        <input
+          type="text"
+          id="DoctorID"
+          name="DoctorID"
+          placeholder="000-0000-000"
+          required
+        />
+
+        <label for="QR%20Code">QR Code <span style="color: red">*</span></label>
+        <input type="file" id="QR%20Code" name="QR Code" required />
+
+        <label for="date">Date <span style="color: red">*</span></label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="dp">Delivery Options</label>
+        <select id="dp" name="dp">
+          <option value="pickup">Pick Up</option>
+          <option value="deliver">Deliver</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

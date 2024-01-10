@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../Asset/favicon.png" />
+    <link rel="stylesheet" href="../Css/inquiries.css" />
+    <title>Inquiries</title>
+  </head>
+  <body>
+    <a href="./index.html" class="home-link"> Home </a>
+    <h1>Inquiries</h1>
+    <p>
+      If there are any issues with the medication please leave a message down
+      below and a message will be relayed to you as soon as possible.
+    </p>
+
+    <div class="container">
+      <form
+        action="mailto:simplelifepharmacy@email.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="row">
+          <div class="col-25">
+            <label for="fname"
+              >First Name <span style="color: red">*</span></label
+            >
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="First Name"
+              placeholder="Jane"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname"
+              >Last Name <span style="color: red">*</span></label
+            >
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="Last Name"
+              placeholder="Doe"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email"
+              >Email Address <span style="color: red">*</span></label
+            >
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="janedoe123@email.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="date"
+              >Date of Purchase <span style="color: red">*</span></label
+            >
+          </div>
+          <div class="col-75">
+            <input type="date" id="date" name="DOP" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="meds">Medication</label>
+          </div>
+          <div class="col-75">
+            <select id="meds" name="Medication">
+              <option value="Prescriptions">Prescriptions</option>
+              <option value="Over the Counter">Over the Counter</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="issue">Issue</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="issue"
+              name="Issue"
+              placeholder="Issues with product should be talked about here...."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

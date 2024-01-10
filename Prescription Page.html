@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="../Css/prescriptionpage.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../Asset/favicon.png" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <title>Prescriptions</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#first"
+        ><img src="../Asset/pill bottle.png" alt="" height="50" width="50"
+      /></a>
+      <a href="#second"
+        ><img src="../Asset/eye%20drops.png" alt="" height="50" width="50"
+      /></a>
+      <a href="#third"
+        ><img src="../Asset/syringe.png" alt="" height="50" width="50"
+      /></a>
+      <a href="#fourth"
+        ><img src="../Asset/cream.png" alt="" height="50" width="50"
+      /></a>
+      <a href="#fifth"
+        ><img src="../Asset/contrap.png" alt="" height="50" width="50"
+      /></a>
+    </nav>
+
+    <div class="container">
+      <section id="first">
+        <div class="shopping-cart">
+          <div class="col">
+            <button
+              type="button"
+              class="buttoncart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="clear-cart">Clear Cart</button>
+          </div>
+          <!-- Title -->
+          <h4>Prescription Pills</h4>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Metformin Hydrochloride"
+                data-price="549"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/met.jpg" target="_blank">
+                <img src="../Asset/met.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Metformin Hydrochloride</span>
+              <span>1000 mg</span>
+              <span>Diabetes</span>
+            </div>
+            <div class="total-price">$549</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Amlodipine & Ramipril"
+                data-price="870"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/rami.jpg" target="_blank">
+                <img src="../Asset/rami.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Amlodipine & Ramipril</span>
+              <span>5 + 2.5 mg</span>
+              <span>Hypertension</span>
+            </div>
+
+            <div class="total-price">$870</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Losartan Potassium"
+                data-price="349"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/losart.jpg" target="_blank">
+                <img src="../Asset/losart.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Losartan Potassium</span>
+              <span>10 x 10 Tablets</span>
+              <span>Hypertension</span>
+            </div>
+
+            <div class="total-price">$349</div>
+          </div>
+
+          <!-- Product #4 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Viagra"
+                data-price="399"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/viagra.jpg" target="_blank">
+                <img src="../Asset/viagra.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Viagra</span>
+              <span>50 mg</span>
+              <span>Erectile Dysfunction</span>
+            </div>
+
+            <div class="total-price">$399</div>
+          </div>
+
+          <!-- Product #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Amlodipine"
+                data-price="270"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/amlo.png" target="_blank">
+                <img src="../Asset/amlo.png" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Amlodipine</span>
+              <span>5 mg</span>
+              <span>Hypertension</span>
+            </div>
+
+            <div class="total-price">$270</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="second">
+        <div class="shopping-cart">
+          <div class="col">
+            <button
+              type="button"
+              class="buttoncart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="clear-cart">Clear Cart</button>
+          </div>
+          <!-- Title -->
+          <h4>Prescription Eye Drops</h4>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Alphagan P"
+                data-price="320"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/alphagan.jpg" target="_blank">
+                <img src="../Asset/alphagan.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Alphagan P</span>
+              <span>10 ml</span>
+              <span>Medicated Eye Solution</span>
+            </div>
+            <div class="total-price">$320</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Lumigan"
+                data-price="235"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/lumigan.jpg" target="_blank">
+                <img src="../Asset/lumigan.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Lumigan</span>
+              <span>3 ml</span>
+              <span>Medicated Eye Solution</span>
+            </div>
+
+            <div class="total-price">$235</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Prolensa"
+                data-price="250"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/prolensa.png" target="_blank">
+                <img src="../Asset/prolensa.png" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Prolensa</span>
+              <span>3 ml</span>
+              <span>Medicated Eye Solution</span>
+            </div>
+
+            <div class="total-price">$250</div>
+          </div>
+
+          <!-- Product #4 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Milflox"
+                data-price="199"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/milflox.jpg" target="_blank">
+                <img src="../Asset/milflox.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Milflox</span>
+              <span>5 ml</span>
+              <span>Medicated Eye Solution</span>
+            </div>
+
+            <div class="total-price">$199</div>
+          </div>
+
+          <!-- Product #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Zylet"
+                data-price="473"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/zylet.jpg" target="_blank">
+                <img src="../Asset/zylet.jpg" alt="" height="75" width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Zylet</span>
+              <span>5 ml</span>
+              <span>Medicated Eye Solution</span>
+            </div>
+
+            <div class="total-price">$473</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="third">
+        <div class="shopping-cart">
+          <div class="col">
+            <button
+              type="button"
+              class="buttoncart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="clear-cart">Clear Cart</button>
+          </div>
+          <!-- Title -->
+          <h4>Insulin Syringe & Medication</h4>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Insulin Needle 0.3"
+                data-price="175"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/insulin%200.3.jpg" target="_blank">
+                <img
+                  src="../Asset/insulin%200.3.jpg"
+                  alt=""
+                  height="75"
+                  width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Insulin Needle</span>
+              <span>0.3 ml</span>
+              <span>Syringe</span>
+            </div>
+            <div class="total-price">$175</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Insulin Needle Pack 0.5ml"
+                data-price="375"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/insulin%200.5.jpg" target="_blank">
+                <img
+                  src="../Asset/insulin%200.5.jpg"
+                  alt=""
+                  height="75"
+                  width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Insulin Needle Pack</span>
+              <span>0.5 ml</span>
+              <span>Syringe</span>
+            </div>
+
+            <div class="total-price">$375</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Humulin 70/30"
+                data-price="250"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/humulin%2070-30.jpg" target="_blank">
+                <img
+                  src="../Asset/humulin%2070-30.jpg"
+                  alt=""
+                  height="75"
+                  width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Humulin 70/30</span>
+              <span>10 ml</span>
+              <span>Insulin</span>
+            </div>
+
+            <div class="total-price">$250</div>
+          </div>
+
+          <!-- Product #4 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Humulin n"
+                data-price="225"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/humulin%20n.jpg" target="_blank">
+                <img
+                  src="../Asset/humulin%20n.jpg"
+                  alt=""
+                  height="75"
+                  width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Humulin N</span>
+              <span>10 ml</span>
+              <span>Insulin</span>
+            </div>
+
+            <div class="total-price">$225</div>
+          </div>
+
+          <!-- Product #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Humulin R"
+                data-price="390"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/humulin%20r.jpg" target="_blank">
+                <img
+                  src="../Asset/humulin%20r.jpg"
+                  alt=""
+                  height="75"
+                  width="75"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Humulin R</span>
+              <span>10 ml</span>
+              <span>Insulin</span>
+            </div>
+
+            <div class="total-price">$390</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fourth">
+        <div class="shopping-cart">
+          <div class="col">
+            <button
+              type="button"
+              class="buttoncart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="clear-cart">Clear Cart</button>
+          </div>
+          <!-- Title -->
+          <h4>Medicated Cream</h4>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="EpiCeram 90g"
+                data-price="600"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/epiceram.jpg" target="_blank">
+                <img src="../Asset/epiceram.jpg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>EpiCeram</span>
+              <span>90 g</span>
+              <span>Eczema</span>
+            </div>
+            <div class="total-price">$600</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Eucrisa 2%"
+                data-price="545"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/eucrisa.png" target="_blank">
+                <img src="../Asset/eucrisa.png" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Eucrisa 2%</span>
+              <span>60 g</span>
+              <span>Eczema</span>
+            </div>
+
+            <div class="total-price">$545</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Fucidin H"
+                data-price="875"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/fucidin%20H.jpg" target="_blank">
+                <img
+                  src="../Asset/fucidin%20H.jpg"
+                  alt=""
+                  height="75"
+                  width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Fucidin H</span>
+              <span>15 g</span>
+              <span>Dermatitis</span>
+            </div>
+
+            <div class="total-price">$875</div>
+          </div>
+
+          <!-- Product #4 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Ringworm Cream"
+                data-price="175"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/ringworm.png" target="_blank">
+                <img src="../Asset/ringworm.png" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Ringworm Cream</span>
+              <span>12 g</span>
+              <span>Ringworm</span>
+            </div>
+
+            <div class="total-price">$175</div>
+          </div>
+
+          <!-- Product #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Retin-A"
+                data-price="284"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/retina.jpg" target="_blank">
+                <img src="../Asset/retina.jpg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Retin-A</span>
+              <span>10 g</span>
+              <span>Acne</span>
+            </div>
+
+            <div class="total-price">$284</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fifth">
+        <div class="shopping-cart">
+          <div class="col">
+            <button
+              type="button"
+              class="buttoncart"
+              data-toggle="modal"
+              data-target="#cart"
+            >
+              Cart (<span class="total-count"></span>)
+            </button>
+            <button class="clear-cart">Clear Cart</button>
+          </div>
+          <!-- Title -->
+          <h4>Contraceptives</h4>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Plan B"
+                data-price="1000"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/plan%20b.jpg" target="_blank">
+                <img src="../Asset/plan%20b.jpg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Plan B One Step</span>
+              <span>1.5 mg</span>
+              <span>Emergency Contraceptive</span>
+            </div>
+            <div class="total-price">$1000</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Evra"
+                data-price="905"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/evra.jpeg" target="_blank">
+                <img src="../Asset/evra.jpeg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Evra</span>
+              <span>Transdermal Patch</span>
+              <span>Birth Control</span>
+            </div>
+
+            <div class="total-price">$905</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Microgynon 30"
+                data-price="825"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/micro.jpg" target="_blank">
+                <img src="../Asset/micro.jpg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Microgynon 30</span>
+              <span>3 x 21 tablets</span>
+              <span>Birth Control</span>
+            </div>
+
+            <div class="total-price">$825</div>
+          </div>
+
+          <!-- Product #4 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Rigevidon"
+                data-price="975"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/rigevidon.jpg" target="_blank">
+                <img
+                  src="../Asset/rigevidon.jpg"
+                  alt=""
+                  height="75"
+                  width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Rigevidon</span>
+              <span>3 x 21 tablets</span>
+              <span>Birth Control</span>
+            </div>
+
+            <div class="total-price">$975</div>
+          </div>
+
+          <!-- Product #5 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <a
+                href="#"
+                data-name="Yasmin"
+                data-price="1200"
+                class="add-to-cart btn btn-primary"
+                ><span class="add-btn"></span
+              ></a>
+            </div>
+
+            <div class="image">
+              <a href="../Asset/yasmin.jpg" target="_blank">
+                <img src="../Asset/yasmin.jpg" alt="" height="75" width="100"
+              /></a>
+            </div>
+
+            <div class="description">
+              <span>Yasmin</span>
+              <span>3 x 21 tablets</span>
+              <span>Birth Control</span>
+            </div>
+
+            <div class="total-price">$1200</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="closed" data-dismiss="modal">
+              Close
+            </button>
+            <button
+              type="button"
+              class="buttoncart"
+              onclick="window.location.href='Prescription Form.html'"
+            >
+              Order now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="rendered-js">
+      // ************************************************
+      // Shopping Cart API
+      // ************************************************
+
+      var shoppingCart = (function () {
+        // =============================
+        // Private methods and propeties
+        // =============================
+        cart = [];
+
+        // Constructor
+        function Item(name, price, count) {
+          this.name = name;
+          this.price = price;
+          this.count = count;
+        }
+
+        // Save cart
+        function saveCart() {
+          sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
+        }
+
+        // Load cart
+        function loadCart() {
+          cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+        }
+        if (sessionStorage.getItem("shoppingCart") != null) {
+          loadCart();
+        }
+
+        // =============================
+        // Public methods and propeties
+        // =============================
+        var obj = {};
+
+        // Add to cart
+        obj.addItemToCart = function (name, price, count) {
+          for (var item in cart) {
+            if (cart[item].name === name) {
+              cart[item].count++;
+              saveCart();
+              return;
+            }
+          }
+          var item = new Item(name, price, count);
+          cart.push(item);
+          saveCart();
+        };
+        // Set count from item
+        obj.setCountForItem = function (name, count) {
+          for (var i in cart) {
+            if (cart[i].name === name) {
+              cart[i].count = count;
+              break;
+            }
+          }
+        };
+        // Remove item from cart
+        obj.removeItemFromCart = function (name) {
+          for (var item in cart) {
+            if (cart[item].name === name) {
+              cart[item].count--;
+              if (cart[item].count === 0) {
+                cart.splice(item, 1);
+              }
+              break;
+            }
+          }
+          saveCart();
+        };
+
+        // Remove all items from cart
+        obj.removeItemFromCartAll = function (name) {
+          for (var item in cart) {
+            if (cart[item].name === name) {
+              cart.splice(item, 1);
+              break;
+            }
+          }
+          saveCart();
+        };
+
+        // Clear cart
+        obj.clearCart = function () {
+          cart = [];
+          saveCart();
+        };
+
+        // Count cart
+        obj.totalCount = function () {
+          var totalCount = 0;
+          for (var item in cart) {
+            totalCount += cart[item].count;
+          }
+          return totalCount;
+        };
+
+        // Total cart
+        obj.totalCart = function () {
+          var totalCart = 0;
+          for (var item in cart) {
+            totalCart += cart[item].price * cart[item].count;
+          }
+          return Number(totalCart.toFixed(2));
+        };
+
+        // List cart
+        obj.listCart = function () {
+          var cartCopy = [];
+          for (i in cart) {
+            item = cart[i];
+            itemCopy = {};
+            for (p in item) {
+              itemCopy[p] = item[p];
+            }
+            itemCopy.total = Number(item.price * item.count).toFixed(2);
+            cartCopy.push(itemCopy);
+          }
+          return cartCopy;
+        };
+
+        // cart : Array
+        // Item : Object/Class
+        // addItemToCart : Function
+        // removeItemFromCart : Function
+        // removeItemFromCartAll : Function
+        // clearCart : Function
+        // countCart : Function
+        // totalCart : Function
+        // listCart : Function
+        // saveCart : Function
+        // loadCart : Function
+        return obj;
+      })();
+
+      // *****************************************
+      // Triggers / Events
+      // *****************************************
+      // Add item
+      $(".add-to-cart").click(function (event) {
+        event.preventDefault();
+        var name = $(this).data("name");
+        var price = Number($(this).data("price"));
+        shoppingCart.addItemToCart(name, price, 1);
+        displayCart();
+      });
+
+      // Clear items
+      $(".clear-cart").click(function () {
+        shoppingCart.clearCart();
+        displayCart();
+      });
+
+      function displayCart() {
+        var cartArray = shoppingCart.listCart();
+        var output = "";
+        for (var i in cartArray) {
+          output +=
+            "<tr>" +
+            "<td>" +
+            cartArray[i].name +
+            "</td>" +
+            "<td>(" +
+            cartArray[i].price +
+            ")</td>" +
+            "<td><div class='input-group'><input type='number' class='item-count form-control' data-name='" +
+            cartArray[i].name +
+            "' value='" +
+            cartArray[i].count +
+            "'></div></td>" +
+            " = " +
+            "<td>" +
+            cartArray[i].total +
+            "</td>" +
+            "</tr>";
+        }
+        $(".show-cart").html(output);
+        $(".total-cart").html(shoppingCart.totalCart());
+        $(".total-count").html(shoppingCart.totalCount());
+      }
+
+      // Delete item button
+
+      $(".show-cart").on("click", ".delete-item", function (event) {
+        var name = $(this).data("name");
+        shoppingCart.removeItemFromCartAll(name);
+        displayCart();
+      });
+
+      // Item count input
+      $(".show-cart").on("change", ".item-count", function (event) {
+        var name = $(this).data("name");
+        var count = Number($(this).val());
+        shoppingCart.setCountForItem(name, count);
+        displayCart();
+      });
+
+      displayCart();
+      //# sourceURL=pen.js
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </body>
+</html>

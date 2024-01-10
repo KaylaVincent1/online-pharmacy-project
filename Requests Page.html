@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Requests</title>
+    <link rel="icon" href="../Asset/favicon.png" />
+    <link href="../Css/requestpages.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form
+      action="mailto:simplelifepharmacy@email.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <div class="invoice-box">
+        <a href="./index.html" class="home-link"> Home </a>
+        <table>
+          <tr class="top">
+            <td colspan="4">
+              <table>
+                <tr>
+                  <td class="title">
+                    <img src="./Asset/Simple%20Life%20Logo.png" alt="" />
+                  </td>
+
+                  <td>
+                    Invoice #: 123<br />
+                    Created: February 22, 2021<br />
+                    Due: March 25, 2021
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr class="information">
+            <td colspan="4">
+              <table>
+                <tr>
+                  <td>
+                    Simple Life Pharmacy<br />
+                    Fairview Shopping Center<br />
+                    Alice Eldemire Dr, Montego Bay<br />
+                    +1(876) 333-5555
+                  </td>
+
+                  <td>
+                    Hilton's Pharmacy<br />
+                    David Tavares<br />
+                    davidtavares@example.com<br />
+                    +1(876) 952-2455
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr class="heading">
+            <td colspan="3">Payment Method</td>
+            <td>Check #</td>
+          </tr>
+
+          <tr class="details">
+            <td colspan="3">Check</td>
+            <td>1000</td>
+          </tr>
+
+          <tr class="heading">
+            <td>Item</td>
+            <td>Unit Cost</td>
+            <td>Quantity</td>
+            <td>Price</td>
+          </tr>
+
+          <tr class="item" v-for="item in items">
+            <td><input v-model="item.description" /></td>
+            <td>$<input type="number" v-model="item.price" /></td>
+            <td><input type="number" v-model="item.quantity" /></td>
+            <td>${{ item.price * item.quantity | currency }}</td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <button class="btn-add-row" @click="addRow">Add row</button>
+            </td>
+          </tr>
+
+          <tr class="total">
+            <td colspan="3"></td>
+            <td value="Total">Total: ${{ total | currency }}</td>
+          </tr>
+        </table>
+        <div id="legalcopy">
+          <p class="legal">
+            <strong>Thank you for your business!</strong>
+              Payment is expected within 31 days; please process this invoice
+            within that time. There will be a 5% interest charge per month on
+            late invoices.
+          </p>
+          <p class="legal">
+            <strong>Please attach screenshot of webpage to the email.</strong>
+             
+          </p>
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <script id="rendered-js">
+      const app = new Vue({
+        el: "table",
+        data: {
+          items: [
+            { description: "Metformin", quantity: 1, price: 549 },
+            { description: "Fucidin H", quantity: 1, price: 875 },
+            { description: "Humulin N", quantity: 1, price: 225 },
+          ],
+        },
+
+        computed: {
+          total() {
+            return this.items.reduce(
+              (acc, item) => acc + item.price * item.quantity,
+              0
+            );
+          },
+        },
+
+        methods: {
+          addRow() {
+            this.items.push({ description: "", quantity: 1, price: 0 });
+          },
+        },
+
+        filters: {
+          currency(value) {
+            return value.toFixed(2);
+          },
+        },
+      });
+      //# sourceURL=pen.js
+    </script>
+  </body>
+</html>
